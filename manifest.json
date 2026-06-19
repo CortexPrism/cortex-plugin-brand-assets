@@ -1,0 +1,30 @@
+{
+  "name": "cortex-plugin-brand-assets",
+  "version": "1.0.0",
+  "description": "Brand Asset Generator — Canva API integration for logo variants, color palettes, typography, and brand guidelines",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-brand-assets",
+  "homepage": "https://cortexprism.io/marketplace/plugins/brand-assets",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "brand_generate_logo", "description": "Generate logo variations", "params": [] },
+    {
+      "name": "brand_create_palette",
+      "description": "Create color palette from brief",
+      "params": []
+    },
+    { "name": "brand_guidelines", "description": "Generate brand guidelines PDF", "params": [] },
+    {
+      "name": "brand_social_templates",
+      "description": "Create social media templates",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
